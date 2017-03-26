@@ -1,3 +1,110 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**** Navigation Bar ****/
+
+.navbar {
+	background-color: #cecfc3;
+	color: #3c2f3a;
+}
+
+.navbar-nav {
+	color: #3c2f3a;
+	font-family: "Raleway", sans-serif;
+}
+
+.nav>li>a {
+	color: #3c2f3a;
+}
+
+.navbar-custom .navbar-brand {
+	color: #3c2f3a;
+	font-size: 30px;
+	font-family: "La Belle Aurore", cursive;
+	margin-top: 3px;
+}
+
+body {
+	background-image: url(wood_rounds.jpg); 
+	width: 100%;
+}
+
+/**** Index ****/
+
+#welcome {
+	padding-top: 12%;
+}
+
+#welcome h1 {
+	font-family: "La Belle Aurore", cursive;
+	color: #3c2f3a;
+	font-size: 4em;
+	text-align: center;
+	padding-top: 6%;
+}
+
+#welcome h2 {
+	font-family: "Josefin Sans", sans-serif;
+	color: #3c2f3a;
+	text-align: center;
+}
+
+/**** About Page ****/
+
+#about {
+	padding-top: 12%;
+}
+
+#about h1 {
+	font-family: "La Belle Aurore", cursive;
+	color: #3c2f3a;
+	text-align: center;
+	font-size: 3.5em;
+	padding-top: 8%;
+}
+
+#about p {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 2em;
+	color: #3c2f3a;
+	text-align: center;
+	padding-top: 1%;
+}
+
+/**** Contact Page ****/
+
+#contact {
+	padding-top: 12%;
+}
+
+.box {
+	background: white;
+	background-color: rgba(255,255,255,0.5);
+
+}
+
+#contact h1 {
+	font-family: "La Belle Aurore", cursive;
+	color: #3c2f3a;
+	text-align: center;
+	font-size: 3.5em;
+	padding-top: 8%;
+}
+
+#contact p {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 2em;
+	color: #3c2f3a;
+	text-align: center;
+	padding-top: 1%;
+}
+
+/**** Footer ****/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	color: #3c2f3a;
+}
+
+
