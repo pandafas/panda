@@ -22,6 +22,19 @@
 	margin-top: 3px;
 }
 
+button.navbar-toggle {
+	background-color: white;
+	border-color: #3c2f3a;
+}
+
+span.icon-bar {
+	background-color: #3c2f3a;
+}
+
+li.focus {
+	background-color: #806f62;
+}
+
 body {
 	background-image: url(wood_rounds.jpg); 
 	width: 100%;
@@ -78,6 +91,7 @@ body {
 .box {
 	background: white;
 	background-color: rgba(255,255,255,0.5);
+	padding-bottom: 5%;
 
 }
 
@@ -115,6 +129,7 @@ body {
 
 #signs {
 	padding-top: 3%;
+	padding-bottom: 3%;
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
 	font-size: 4em;
@@ -122,6 +137,7 @@ body {
 
 #railings {
 	padding-top: 3%;
+	padding-bottom: 3%;
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
 	font-size: 4em;
@@ -129,13 +145,16 @@ body {
 
 #words {
 	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-bottom: 15%;
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
 	font-size: 4em;
 }
 
 #pro {
-	padding-bottom: 5%;
+	padding-top: 7%;
+	padding-bottom: 15%;
 	padding-left: 3%;
 	padding-right: 3%;
 }
@@ -143,7 +162,7 @@ body {
 /**** Footer ****/
 
 footer {
-	position: absolute;
+	position: relative;
 	left: 0;
 	bottom: 0px;
 	height: 60px;

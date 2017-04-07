@@ -14,3 +14,46 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$( document ).ready(function() {
+// Submit Button
+	$('#submit').on('click', function() {
+		// if form submit not working later remove this
+		event.preventDefault();
+		////////////////////////
+		var comment = $('#message-box').val();
+		var name = $('#name').val();
+		var phone = $('#phone').val();
+		var email = $('#email').val();
+
+		if(comment === '') {
+			$('#message-box').css('border', '2px solid red');
+		} else {
+
+
+		$('#visible-comment').html(comment);
+		$('#message-box').hide();
+		$('#visible-comment').html(comment.toUpperCase());
+		$('#visible-comment').css('background-color', '#cecfc3');
+		
+		
+		$('#visible-name').html(name);
+		$('#name').hide();
+		$('#visible-name').html(name.toUpperCase());
+		$('#name').css ('background-color', 'red');
+		$('#visible-name').css('background-color', '#cecfc3');
+
+		
+		$('#visible-phone').html(phone);
+		$('#phone').hide();
+		$('#visible-phone').html(phone.toUpperCase());
+		$('#visible-phone').css('background-color', '#cecfc3');
+
+		
+		$('#visible-email').html(email);
+		$('#email').hide();
+		$('#visible-email').html(email.toUpperCase());
+		$('#visible-email').css('background-color', '#cecfc3');
+	}
+		return false;
+	});
+});

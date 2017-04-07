@@ -3,7 +3,9 @@
 	<head>
 		<title>Grit &amp; Grain</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<%= csrf_meta_tags %>
 		
 
@@ -36,7 +38,7 @@
 					</button>
 					<a class="navbar-custom navbar-brand" href="/">Grit &amp; Grain</a>
 				</div>
-				<div class="navbar-collapse collapse">
+				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="/">Home</a></li>
 						<li><a href="/static_pages/about">About</a></li>
@@ -60,10 +62,12 @@
 		<footer>
 			<div class="container" id="db">
 		      <div class="row">
-		        <p>&copy; DataBarn Solutions.</p>
+		        <p class="text-center">&copy; DataBarn Solutions.</p>
 		      </div>
 		    </div>
     	</footer>
 		
 	</body>
 </html>
+
+
