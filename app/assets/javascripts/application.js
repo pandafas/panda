@@ -17,6 +17,7 @@
 $( document ).ready(function() {
 // Submit Button
 	$('#submit').on('click', function() {
+		//console.log("Fired!");
 		// if form submit not working later remove this
 		event.preventDefault();
 		////////////////////////
