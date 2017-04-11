@@ -40,15 +40,18 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="/static_pages/about">About</a></li>
-						<li><a href="/static_pages/contact">Contact</a></li>
+						<li><%= link_to "About", static_pages_about_path %></li>
+						<li><%= link_to "Contact", static_pages_contact_path %></li>
 						<li class="dropdown">
-							<a href="/static_pages/projects/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/static_pages/projects/#signs">Signs</a></li>
-								<li><a href="/static_pages/projects/#railings">Railings</a></li>
-								<li><a href="/static_pages/projects/#words">Words</a></li>
+								<li><%= link_to "Signs", static_pages_projects_path(anchor: "signs") %></li>
+								<li><%= link_to "Railings", static_pages_projects_path(anchor: "railings") %></li>
+								<li><%= link_to "Words", static_pages_projects_path(anchor: "words") %></li>
 							</ul>
+
+						</li>
+						<li><%= link_to "Products", products_path %>
 						</li>
 					</ul>
 				</div><!--/.nav-collapse -->

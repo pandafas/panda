@@ -1,3 +1,51 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//products_controller.rb
+.panel-body h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+.panel-heading
+
+
+table {
+	width: 100%;
+}
+
+tr th, tr td {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	height: 50px;
+	color: #3c2f3a;
+}
+
+tr td {
+	font-size: 1.3em;
+}
+
+
+.panel {
+	width:80%;
+	margin-top: 8%;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+//show.html.erb
+
+#ncont {
+	margin-top: 10%;
+}
+
+
+
+
