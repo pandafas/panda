@@ -12,21 +12,33 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name, "Name: " %>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <%= f.label :description %>
+    <%= f.label :description, "Description: " %>
     <%= f.text_area :description %>
   </div>
 
   <div class="field">
-    <%= f.label :image_url %>
+    <%= f.label :image_url, "Image URL: " %>
     <%= f.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :colour, "Color: " %><br>
+    <%= f.text_field :colour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price, "Price: $" %>
+    <%= f.text_field :price %>
   </div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+
