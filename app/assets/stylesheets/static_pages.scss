@@ -66,6 +66,28 @@ body {
 	text-align: center;
 }
 
+/**** Landing Page ****/
+
+#featured {
+	padding-top: 8%;
+	text-align: center;
+}
+
+#featured h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3em;
+}
+
+#featured p {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.8em;
+}
+
+#featured .box {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
 /**** About Page ****/
 
 #about {
