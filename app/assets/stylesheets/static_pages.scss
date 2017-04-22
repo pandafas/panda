@@ -68,24 +68,27 @@ body {
 
 /**** Landing Page ****/
 
-#featured {
-	padding-top: 8%;
-	text-align: center;
+#land {
+	padding-top: 7%;
+	width: 80%;
 }
 
-#featured h1 {
+.carousel-control:hover {
+	background-color: transparent;
+}
+
+.carousel-caption {
 	font-family: "La Belle Aurore", cursive;
-	font-size: 3em;
+	color: #3c2f3a !important;
+	font-size: 2em  !important;
 }
 
-#featured p {
-	font-family: "Josefin Sans", sans-serif;
-	font-size: 1.8em;
+.glyphicon {
+	color: #3c2f3a;
 }
 
-#featured .box {
-	margin-right: 10%;
-	margin-left: 10%;
+.carousel-indicators li:active {
+	color: #3c2f3a ;
 }
 
 /**** About Page ****/

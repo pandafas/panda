@@ -1,26 +1,6 @@
   <div class="container-fluid" id="product">
     <div class="row">
-      <% @products.each do |product| %>
-        <div class="col-sm-2 col-md-4">
-          <div class="row">
-            <h1><%= product.name %></h1>
-          </div>
-          <div class="row">
-            <%= image_tag(product.image_url, class: "img-fluid", width: "350", height: "300") unless product.image_url.blank? %>
-          </div>
-          <div class="row">
-            <p><%= product.description %></p>
-          </div>
-          <div class="row">
-            <p><strong>$<%= product.price %></strong></p>
-          </div>
-          <div class="row" id="actions">
-            <p><%= link_to 'Show', product %></p>
-            <p><%= link_to 'Edit', edit_product_path(product) %></p>
-            <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></p>
-          </div>
-        </div>
-      <% end %> 
+      <%= render @products %>
     </div>
   </div>
 
