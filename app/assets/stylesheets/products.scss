@@ -71,7 +71,13 @@ tr td {
 
 #product h1 {
 	font-family: "La Belle Aurore", cursive;
-	font-size: 2.2em;
+	font-size: 2.5em;
+	text-decoration: underline;
+}
+
+#product h2 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2em;
 }
 
 #product p {
@@ -98,3 +104,19 @@ a {
 a:visited {
 	color: #666;
 }
+
+#sign {
+	padding-top: 4%;
+}
+
+#rail {
+	padding-top: 4%;
+}
+
+#word {
+	padding-top: 4%;;
+}
+
+// _product.html.erb
+
+

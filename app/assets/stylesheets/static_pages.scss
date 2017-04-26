@@ -157,7 +157,7 @@ body {
 	text-align: center;
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
-	font-size: 4.5em;
+	font-size: 5em;
 }
 
 #signs {
@@ -165,7 +165,8 @@ body {
 	padding-bottom: 3%;
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
-	font-size: 4em;
+	font-size: 5em;
+	text-align: center;
 }
 
 #railings {
@@ -174,6 +175,7 @@ body {
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
 	font-size: 4em;
+	text-align: center;
 }
 
 #words {
@@ -183,15 +185,28 @@ body {
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;
 	font-size: 4em;
+	text-align: center;
 }
 
 #pro {
-	padding-top: 7%;
-	padding-bottom: 15%;
+	padding-top: 5%;
+	padding-bottom: 8%;
 	padding-left: 3%;
 	padding-right: 3%;
 }
 
+a {
+	color: #3c2f3a;
+}
+
+a:visited {
+	color: #666
+}
+
+a:hover {
+	background-color: white;
+	color: #cecfc3 !important;
+}
 /**** Footer ****/
 
 footer {
