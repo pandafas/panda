@@ -16,9 +16,9 @@
           </div>
           <div class="container-fluid" id="actions">
             <div class="row">
-              <p><%= link_to 'Show', product %></p>
-              <p><%= link_to 'Edit', edit_product_path(product) %></p>
-              <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></p>
+            <button type="button" class="btn btn-default"><%= link_to 'Show', product %></button>
+            <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(product) %></button>
+              <button type="button" class="btn btn-default"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></button>
             </div>
           </div>
         </div>

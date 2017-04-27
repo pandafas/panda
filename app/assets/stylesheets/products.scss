@@ -40,11 +40,21 @@ tr td {
 }
 
 #name {
+	padding-top: 5%;
 	padding-bottom: 2%;
 }
 
 #description {
 	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+#colour {
+	padding-bottom: 1%;
+}
+
+#price {
+	padding-bottom: 1%;
 }
 
 #prod_show p strong {
@@ -55,6 +65,10 @@ tr td {
 #prod_show p {
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 1.4em;
+}
+
+#showaction {
+	padding-top: 2%;
 }
 
 #showaction a:hover {
@@ -71,13 +85,13 @@ tr td {
 
 #product h1 {
 	font-family: "La Belle Aurore", cursive;
-	font-size: 2.5em;
+	font-size: 3.5em;
 	text-decoration: underline;
 }
 
 #product h2 {
 	font-family: "La Belle Aurore", cursive;
-	font-size: 2em;
+	font-size: 2.3em;
 }
 
 #product p {
@@ -117,10 +131,12 @@ a:visited {
 	padding-top: 4%;;
 }
 
-// _product.html.erb
+// _show.html.erb
 
-#actions p {
-	size: 1em;
+#prod_show .box {
+
 }
+
+
 
 

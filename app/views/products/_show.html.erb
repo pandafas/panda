@@ -1,0 +1,51 @@
+<div class="container" id="prod_show">
+	<div class="box">
+	<div class="row">
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="name">
+			<p>
+  				<strong>Product Name:</strong>
+  				<%= @product.name %>
+			</p>
+		</div>
+
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="image">
+			<p>
+  				<%= image_tag(@product.image_url, class: "img-fluid", size: "350x350") %>
+  			</p>
+		</div>
+
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="description">
+			<p>
+  				<strong>Description:</strong>
+  				<%= @product.description %>
+			</p>
+		</div>
+
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="colour">
+			<p>
+				<strong>Colour:</strong>
+				<%= @product.colour %>
+			</p>
+		</div>
+
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="price">
+			<p>
+				<strong>Price: $</strong>
+				<%= @product.price %>
+			</p>
+		</div>
+
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4">
+			<p>
+				<strong>Category: </strong>
+				<%= @product.category %>
+			</p>
+		</div>
+
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="showaction">
+
+			<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %></button> |
+			<button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>
+		</div>
+	</div>
+</div>
