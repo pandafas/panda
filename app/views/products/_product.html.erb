@@ -14,10 +14,13 @@
           <div class="row">
             <p><%= product.category %></p>
           </div>
-          <div class="row" id="actions">
-            <p><%= link_to 'Show', product %></p>
-            <p><%= link_to 'Edit', edit_product_path(product) %></p>
-            <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></p>
+          <div class="container-fluid" id="actions">
+            <div class="row">
+              <p><%= link_to 'Show', product %></p>
+              <p><%= link_to 'Edit', edit_product_path(product) %></p>
+              <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?'} %></p>
+            </div>
           </div>
         </div>
+       
       

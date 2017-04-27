@@ -27,7 +27,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :colour, "Color: " %><br>
+    <%= f.label :colour, "Color: " %>
     <%= f.text_field :colour %>
   </div>
 
@@ -38,7 +38,7 @@
 
   <div class="field">
     <%= f.label :category, "Category: " %>
-    <%= f.text_field :category %>
+    <%= f.select :category, [["Select Option", ""], "Signs", "Railings", "Words", "Wood Rounds"], selected: (nil || product.category) %>
   </div>
 
   <div class="actions">

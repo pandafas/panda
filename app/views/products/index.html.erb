@@ -5,7 +5,7 @@
   		</div>
   	</div>
     <div class="row">
-      <%= render @products %>
+      <%= render @products.where(:category => 'Signs') %>
     </div>
     <div class="row" id="rail">
     	<div class="col-sm-12 col-md-12 col-lg-12">
@@ -13,7 +13,7 @@
     	</div>
     </div>
     <div class="row">
-    	<%= render @products %>
+    	<%= render @products.where(:category => 'Railings') %>
     </div>
     <div class="row" id="word">
     	<div class="col-sm-12 col-md-12 col-lg-12">
@@ -21,14 +21,14 @@
     	</div>
 	  </div>
 	  <div class="row">
-		  <%= render @products %>
+		  <%= render @products.where(:category => 'Words') %>
 	  </div>
     <div class="row" id="rounds">
       <div class="col-sm-12 col-md-12 col-lg-12">
         <h1>Wood Rounds</h1>
       </div>
       <div class="row">
-        <%= render @products %>
+        <%= render @products.where(:category => 'Wood Rounds') %>
       </div>
   </div>
 
