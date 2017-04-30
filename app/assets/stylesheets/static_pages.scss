@@ -66,6 +66,29 @@ body {
 	text-align: center;
 }
 
+/**** Main Page ****/
+
+#main {
+	padding-top: 8%;
+}
+
+#main h1 {
+	text-align: center;
+	font-family: "La Belle Aurore", cursive;
+	color: #3c2f3a;
+	font-size: 4.5em;
+	padding-top: 7%;
+}
+
+#main p {
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	color: #3c2f3a;
+	font-size: 3.5em;
+	line-height: 120%;
+	padding-top: 5%;
+}
+
 /**** Landing Page ****/
 
 #title {
@@ -86,9 +109,6 @@ body {
 	color: #3c2f3a;
 	text-align: center;
 }
-
-
-
 
 #land {
 	padding-top: 7%;
