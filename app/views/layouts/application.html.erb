@@ -51,15 +51,10 @@
 						<li><%= link_to "Products", products_path %>
 						</li>
 					</ul>
-					<div class="container">
-					<%= form_tag("/products", method: "get") do %>
-						<div class="form-group row">
-						<%= label_tag(:q, "Search for:", class: "col-xs-2 col-form-label col-form-label-sm") %>
-						<div class="col-sm-3">
-						<%= text_field_tag :q, "", class: "form-control form-control-sm" %>
-						</div>
-						<%= submit_tag("Search", class: "btn btn-primary") %>
-						</div>
+					<%= form_tag("/products", method: "get", class: "form") do %>
+						<%= label_tag(:q, "Search for:") %>
+						<%= text_field_tag (:q) %>
+						<%= submit_tag("Search") %>
 					<% end %>
 					</div>
 				</div><!--/.nav-collapse -->
