@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      # return our filtered list here
+      @products = Product.search(search_term)
     else
       @products = Product.all
     end

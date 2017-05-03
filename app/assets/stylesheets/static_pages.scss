@@ -133,10 +133,29 @@ body {
 	color: #3c2f3a ;
 }
 
-.form {
-	text-align: right;
+#search .form {
 	padding-top: 1%;
 }
+
+#search label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.4em;
+}
+
+#search input {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #ebedea;
+}
+
+#search .form-control {
+	background-color: #ebedea;
+}
+
+/*#search .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	color: #806f62;
+
+}*/
 
 /**** About Page ****/
 
