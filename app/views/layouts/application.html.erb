@@ -51,8 +51,8 @@
 						<li><%= link_to "Products", products_path %>
 						</li>
 					</ul>
-					<%= form_tag("/products", method: "get", class: "navbar-form navbar-right", id: "search") do %>
-						<%= label_tag(:q, "Search for:") %>
+					<%= form_tag("/products", method: "get", class: "navbar-form navbar-right", id: "search_form") do %>
+						<%= label_tag(:search, "Search for:") %>
 						<div class="form-group">
 						<%= text_field_tag :search, nil, :placeholder => "Search", class: "form-control" %>
 						</div>
@@ -60,7 +60,6 @@
 					<% end %>
 					</div>
 				</div><!--/.nav-collapse -->
-			</div>
 		</nav>
 
 

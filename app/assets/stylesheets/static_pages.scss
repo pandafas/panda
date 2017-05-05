@@ -133,21 +133,21 @@ body {
 	color: #3c2f3a ;
 }
 
-#search .form {
+#search_form .form {
 	padding-top: 1%;
 }
 
-#search label {
+#search_form label {
 	font-family: "La Belle Aurore", cursive;
 	font-size: 1.4em;
 }
 
-#search input {
+#search_form input {
 	font-family: "Josefin Sans", sans-serif;
 	background-color: #ebedea;
 }
 
-#search .form-control {
+#search_form .form-control {
 	background-color: #ebedea;
 }
 
@@ -210,11 +210,23 @@ body {
 	line-height: 120%;
 }
 
-#form {
-	padding-left: 20%;
-	width: 80%;
+#cform {
 	padding-top: 3%;
 }
+
+#cont {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.3em;
+}
+
+#cform input {
+	font-family: "Josefin Sans", sans-serif;
+}	
+
+#cform textarea {
+	font-family: "Josefin Sans", sans-serif;
+}
+
 
 /**** Projects Page ****/
 
@@ -287,6 +299,22 @@ a:hover {
 
 /**** Thank You ****/
 
+#thank {
+	padding-top: 8%;
+}
+
+#thank h1 {
+	text-align: center;
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.5em;
+}
+
+#thank p {
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 2em;
+	line-height: 1.5em;
+}
 
 
 

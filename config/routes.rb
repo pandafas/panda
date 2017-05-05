@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'static_pages/landing_page'
 
   post 'static_pages/thank_you'
+
+  get 'static_pages/thank_you'
+
+  get 'static_pages/landing_page'
 
   resources :products
   get 'static_pages/projects'
