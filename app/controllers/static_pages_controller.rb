@@ -22,6 +22,6 @@ class StaticPagesController < ApplicationController
       :to => "gritngrain08@gmail.com",
       :subject => "A new contact form message from #{@contact_name}",
       :body => @contact_message).deliver_now
-    UserMailer.contact_form(@email, @name, @message).deliver_now
+    UserMailer.contact_form(@contact_email, @contact_name, @contact_message).deliver_now
   end
 end
