@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  resources :users
   post 'static_pages/thank_you'
 
   get 'static_pages/thank_you'
 
   get 'static_pages/landing_page'
 
-  #post "SENDGRID_USERNAME: #{ENV['SENDGRID_USERNAME']}"
-  #post "SENDGRID_PASSWORD: #{ENV['SENDGRID_PASSWORD']}"
+  
 
   resources :products
   get 'static_pages/projects'
