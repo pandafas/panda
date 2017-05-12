@@ -55,9 +55,9 @@
 					<ul class="nav pull-right">
 						<li>
 						<% if user_signed_in? %>
-							<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+							<%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default", id: "lgin") %>
 						<% else %>
-							<%= link_to('Login', new_user_session_path) %>
+							<%= link_to('Login', new_user_session_path, :class => "btn btn-default", id: "lgin") %>
 						<% end %>
 						</li>
 					</ul>
@@ -72,8 +72,10 @@
 				</div><!--/.nav-collapse -->
 		</nav>
 
+		<div class="container" id="mssgs">
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
+		</div>
 
 		<%= yield %>
 
