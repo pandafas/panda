@@ -51,7 +51,16 @@ body {
 }
 
 #mssgs {
-	padding-top: 6%;
+	padding-top: 6%; 
+}
+
+.alert {
+	padding-top: 8%;
+}
+
+#mssgs p {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.5em;
 }
 
 /**** Index ****/
@@ -100,7 +109,7 @@ body {
 /**** Landing Page ****/
 
 #title {
-	padding-top: 8%;
+	padding-top: 2%;
 }
 
 #title h1 {
@@ -168,7 +177,7 @@ body {
 /**** About Page ****/
 
 #about {
-	padding-top: 10%;
+	padding-top: 2%;
 }
 
 #about h1 {
@@ -191,7 +200,7 @@ body {
 /**** Contact Page ****/
 
 #contact {
-	padding-top: 5%;
+	padding-top: 2%;
 }
 
 .box {
@@ -239,7 +248,7 @@ body {
 /**** Projects Page ****/
 
 #projects {
-	padding-top: 5%;
+	padding-top: 2%;
 	text-align: center;
 	font-family: "La Belle Aurore", cursive;
 	color: #3c2f3a;

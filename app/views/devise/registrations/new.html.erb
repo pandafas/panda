@@ -14,10 +14,10 @@
 
     <div class="form-group">
       <%= f.label :password, nil, :class => "col-sm-2 control-label" %>
-      <% if @minimum_password_length %>
-      <% end %>
       <%= f.password_field :password, autocomplete: "off", :class => "col-sm-8" %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% if @minimum_password_length %><i><%= @minimum_password_length %> characters minimum</i>
+      <% end %>
+     
     </div>
     
 
