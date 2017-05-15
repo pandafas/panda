@@ -1,3 +1,23 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#users h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.5em;
+	text-decoration: underline;
+}
+
+#usertable th {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+.table-striped>tbody>tr:nth-child(odd) {
+	background-color: #cecfc3 !important;
+}
+
+.table-striped>tbody>tr:nth-child(even) {
+	background-color: #ebedea !important;
+}
