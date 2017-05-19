@@ -1,16 +1,21 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
   resources :users
+
+  resources :products do
+    resources :comments
+  end
+
   post 'static_pages/thank_you'
 
   get 'static_pages/thank_you'
 
   get 'static_pages/landing_page'
 
-  
 
-  resources :products
+
   get 'static_pages/projects'
 
   get 'static_pages/about'
