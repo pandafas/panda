@@ -3,9 +3,9 @@ class CommentsController < ApplicationController
 	def create
 		@product = Product.find(params[:product_id])
 		@comment = @product.comments.new(comment_params)
-		@comment.uer = current_user
+		@comment.user = current_user
 		@comment.save
-		redirect_to_product_path(@product)
+		redirect_to(@product)
 	end
 
 	def destroy

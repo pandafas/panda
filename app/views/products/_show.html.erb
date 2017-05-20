@@ -48,13 +48,15 @@
 				<%= @product.highest_rating_comment %>
 				<%= @product.lowest_rating_comment %>
 			</p>
+			<p><strong>Average Rating: </strong>
+				<div class="rated" data-score="<%= @product.average_rating %>"></div>
+			</p>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="form-group col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8" id="comments">
-  			<label for="comment">Comments:</label>
-  			<textarea class="form-control" rows="5"></textarea>
+		<div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8" id="comments">
+  			<%= render 'new_comment' %>
 		</div>
 	</div>
 
@@ -63,6 +65,13 @@
 
 			<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %></button> |
 			<button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>
+		</div>
+	</div>
+
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+			<%= render 'comments' %>
+			</div>
 		</div>
 	</div>
 	</div>
