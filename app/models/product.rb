@@ -7,11 +7,11 @@ class Product < ApplicationRecord
 	end
 
 	def highest_rating_comment
-		comments.order(rating: :desc).limit(1).pluck(:rating)
+		comments.rating_desc.first
 	end
 
 	def lowest_rating_comment
-		comments.order(rating: :asc).limit(1).pluck(:rating)
+		comments.rating_asc.first
 	end
 
 	def average_rating

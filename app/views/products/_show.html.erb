@@ -1,78 +1,77 @@
 <div class="container" id="prod_show">
 	<div class="box">
-	<div class="row">
-		<div class="col-sm-offset-4 col-md-offset-4 col-sm-5 col-md-5" id="name">
-			<p>
-  				<strong>Product Name:</strong>
-  				<%= @product.name %>
-			</p>
+		<div class="row">
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-5 col-md-5" id="name">
+				<p>
+  					<strong>Product Name:</strong>
+  					<%= @product.name %>
+				</p>
 		</div>
 
-		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="image">
-			<p>
-  				<%= image_tag(@product.image_url, class: "img-fluid", size: "350x350") %>
-  			</p>
-		</div>
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="image">
+				<p>
+  					<%= image_tag(@product.image_url, class: "img-fluid", size: "350x350") %>
+  				</p>
+			</div>
 
-		<div class="col-sm-offset-5 col-md-offset-4 col-sm-4 col-md-4" id="description">
-			<p>
-  				<strong>Description:</strong>
+			<div class="col-sm-offset-5 col-md-offset-4 col-sm-4 col-md-4" id="description">
+				<p>
+  					<strong>Description:</strong>
   				<%= @product.description %>
-			</p>
+				</p>
+			</div>
+
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="colour">
+				<p>
+					<strong>Colour:</strong>
+					<%= @product.colour %>
+				</p>
+			</div>
+
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="price">
+				<p>
+					<strong>Price: $</strong>
+					<%= @product.price %>
+				</p>
+			</div>
+
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="catey">
+				<p>
+					<strong>Category: </strong>
+					<%= @product.category %>
+				</p>
+			</div>
+
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="rate">
+				<p>
+					<strong>Ratings: </strong>
+					<%= @product.highest_rating_comment %>
+					<%= @product.lowest_rating_comment %>
+				</p>
+				<p><strong>Average Rating: </strong>
+					<div class="rated" data-score="<%= @product.average_rating %>"></div>
+				</p>
+			</div>
 		</div>
 
-		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="colour">
-			<p>
-				<strong>Colour:</strong>
-				<%= @product.colour %>
-			</p>
-		</div>
-
-		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="price">
-			<p>
-				<strong>Price: $</strong>
-				<%= @product.price %>
-			</p>
-		</div>
-
-		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="catey">
-			<p>
-				<strong>Category: </strong>
-				<%= @product.category %>
-			</p>
-		</div>
-
-		<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="rate">
-			<p>
-				<strong>Ratings: </strong>
-				<%= @product.highest_rating_comment %>
-				<%= @product.lowest_rating_comment %>
-			</p>
-			<p><strong>Average Rating: </strong>
-				<div class="rated" data-score="<%= @product.average_rating %>"></div>
-			</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8" id="comments">
+		<div class="row">
+			<div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8" id="comments">
   			<%= render 'new_comment' %>
+			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-sm-offset-5 col-md-offset-5 col-sm-4 col-md-4" id="showaction">
+		<div class="row">
+			<div class="col-sm-offset-5 col-md-offset-5 col-sm-4 col-md-4" id="showaction">
 
-			<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %></button> |
-			<button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>
+				<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_product_path(@product) %></button> |
+				<button type="button" class="btn btn-default"><%= link_to 'Back', products_path %></button>
+			</div>
 		</div>
-	</div>
 
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 			<%= render 'comments' %>
 			</div>
 		</div>
-	</div>
 	</div>
 </div>

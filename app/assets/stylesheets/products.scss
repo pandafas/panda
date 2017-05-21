@@ -67,15 +67,28 @@ tr td {
  #rate p strong {
  	font-family: "La Belle Aurore", cursive;
  	font-size: 1.6em;
- }
+}
 
+#comments h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2.0em;
+	text-align: center;
+}
 #comments label {
 	font-family: "La Belle Aurore", cursive;
-	font-size: 2.0em !important;
+	font-size: 1.3em;
 }
 
 #comments textarea {
 	background-color: #ebedea;
+}
+
+#comments .btn-primary {
+	background-color: #fff;
+	color: #333;
+	font-family: "Josefin Sans", sans-serif;
+	border-color: #ccc;
+
 }
 
 #prod_show p strong {
@@ -96,6 +109,15 @@ tr td {
 	background-color: white;
 	color: #806f62;
 	width: auto;
+}
+
+.product-reviews {
+	padding-left: 3%;
+}
+
+.product-reviews hr {
+	width: 80%;
+
 }
 
 //index.html.erb
