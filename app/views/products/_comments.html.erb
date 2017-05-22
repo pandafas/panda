@@ -12,4 +12,7 @@
 			<p><%= comment.body %></p>
 		</div>
 	<% end %>
+	<hr>
+	<p><%= will_paginate @comments, :page_links => false %></p>
 </div>
+

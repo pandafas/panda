@@ -120,6 +120,36 @@ tr td {
 
 }
 
+.pagination {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.2em;
+	color: #3c2f3a;
+	margin: 1.5em;
+
+}
+
+.pagination .disabled {
+	border: 1px solid;
+	color: #979183;
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
+
+.pagination .next_page {
+	border: 1px solid;
+	color: #806f62 !important;
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
+
+a.previous_page {
+	border: 1px solid;
+	color: #979183 !important;
+	text-decoration: none !important;
+	padding: 0.2em 0.5em;
+}
+
+
 //index.html.erb
 
 #product {
