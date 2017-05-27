@@ -11,27 +11,35 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
+  <div class="row">
+    <div class="form-group">
+      <%= f.label :first_name, nil, :class => "col-sm-2 control-label" %>
+      <%= f.text_field :first_name, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+  <div class="row">
+    <div class="form-group">
+      <%= f.label :last_name, nil, :class => "col-sm-2 control-label" %>
+      <%= f.text_field :last_name, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email %>
+  <div class="row">
+    <div class="form-group">
+      <%= f.label :email, nil, :class => "col-sm-2 control-label" %>
+      <%= f.email_field :email, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+  <div class="row">
+    <div class="form-group">
+      <%= f.label :password, nil, :class => "col-sm-2 control-label" %>
+      <%= f.password_field :password, autocomplete: "off", autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => "btn btn-primary" %>
   </div>
 <% end %>

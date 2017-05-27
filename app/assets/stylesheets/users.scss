@@ -21,3 +21,29 @@
 .table-striped>tbody>tr:nth-child(even) {
 	background-color: #ebedea !important;
 }
+
+//show
+
+#show_deets {
+	padding-top: 3%
+}
+
+#show_deets div>p {
+	font-family: "Josefin Sans", sans-serif;
+	padding-bottom: 2%;
+	font-size: 1.5em;
+
+}
+
+#show_deets p>strong {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2.0em;
+}
+
+.box {
+	background: white;
+	background-color: rgba(255,255,255,0.5);
+	padding-bottom: 5%;
+}
+
+
