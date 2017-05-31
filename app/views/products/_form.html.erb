@@ -11,39 +11,54 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name, "Name: " %>
-    <%= f.text_field :name %>
+  <div class="row">
+    <div class="form-group">
+    <%= f.label :name, nil, :class => "col-sm-2 control-label" %>
+    <%= f.text_field :name, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :description, "Description: " %>
-    <%= f.text_area :description %>
+  <div class="row">
+    <div class="form-group">
+    <%= f.label :description, nil, :class => "col-sm-2 control-label" %>
+    <%= f.text_area :description, autofocus: true, :class => "col-sm-8" %>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="form-group">
+    <%= f.label :image_url, nil, :class => "col-sm-2 control-label" %>
+    <%= f.text_field :image_url, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :image_url, "Image URL: " %>
-    <%= f.text_field :image_url %>
+  <div class="row">
+    <div class="form-group">
+    <%= f.label :colour, nil, :class => "col-sm-2 control-label" %>
+    <%= f.text_field :colour, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :colour, "Color: " %>
-    <%= f.text_field :colour %>
+  <div class="row">
+    <div class="form-group">
+    <%= f.label :price, nil, :class => "col-sm-2 control-label" %>
+    <%= f.text_field :price, autofocus: true, :class => "col-sm-8" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :price, "Price: $" %>
-    <%= f.text_field :price %>
-  </div>
-
-  <div class="field">
-    <%= f.label :category, "Category: " %>
+  <div class="row">
+    <%= f.label :category, :class => "col-sm-2" %>
     <%= f.select :category, [["Select Option", ""], "Signs", "Railings", "Words", "Wood Rounds"], selected: (nil || product.category) %>
   </div>
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="row">
+    <div class="col-sm-offset-4 col-md-offset-4 col-sm-8 col-md-8">
+      <div class="actions">
+    <%= f.submit :class => "btn btn-primary" %>
+      </div>
+    <% end %>
+    </div>
   </div>
-<% end %>
 
 

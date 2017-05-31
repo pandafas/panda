@@ -46,4 +46,43 @@
 	padding-bottom: 5%;
 }
 
+// new user & editing user (_form)
+
+#newuser h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#newuser label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+#newuser .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
+
+// password-edit
+
+#forgot h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#forgot label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+
+#forgot .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
+
 

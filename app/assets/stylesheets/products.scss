@@ -1,7 +1,3 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 //products_controller.rb
 .panel-body h1 {
 	font-family: "La Belle Aurore", cursive;
@@ -204,6 +200,43 @@ a:visited {
 	padding-top: 4%;;
 }
 
+//new.html.erb
+
+#newprod h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#newprod label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+#newprod .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
+
+//edit.html.erb
+
+#editprod h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#editprod label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+#editprod .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
 
 
 
