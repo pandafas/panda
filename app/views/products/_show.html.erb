@@ -43,14 +43,12 @@
 			</div>
 
 			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="rate">
-				<p>
-					<strong>Ratings: </strong>
-					<%= @product.highest_rating_comment %>
-					<%= @product.lowest_rating_comment %>
-				</p>
-				<p><strong>Average Rating: </strong>
+					<p><strong>Ratings: </strong></p>
+					<small>Highest: </small><div class="rated" data-score="<%= @product.highest_rating_comment.nil? ? '0' : @product.highest_rating_comment.rating %>"></div>
+					<br>
+					<small>Lowest: </small><div class="rated" data-score="<%= @product.lowest_rating_comment.nil? ? '0' : @product.lowest_rating_comment.rating %>"></div><br>
+				<p><strong>Average Rating: </strong></p>
 					<div class="rated" data-score="<%= @product.average_rating %>"></div>
-				</p>
 			</div>
 		</div>
 
