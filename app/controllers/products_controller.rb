@@ -8,7 +8,7 @@
       search_term = params[:q]
       @products = Product.search(search_term)
     else
-      @products = Product.all
+      @products = Product.where('category is not null').group_by(&:category)
     end
   end
 

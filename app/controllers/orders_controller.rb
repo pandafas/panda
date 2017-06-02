@@ -5,6 +5,12 @@ class OrdersController < ApplicationController
 	end
 
 	def show
+		#@orders = orders.find(@user.id)
+		#foreach @orders
+			#@product = Product.find(@order.product_id)
+			#puts product_details for order
+
+
 	end
 
 	def new
