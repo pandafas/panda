@@ -4,6 +4,8 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 
+config.action_mailer.default_url_options = { :host => 'cfgrit.herokuapp.com' }
+
 ActionMailer::Base.smtp_settings = {
 	:address => "smtp.sendgrid.net",
 	:port => "587",
