@@ -6,7 +6,8 @@
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.search(search_term)
+      @products = Product.search(search_term).nil? ? "No search results" : Product.search(search_term).group_by(&:category)
+      
     else
       @products = Product.where('category is not null').group_by(&:category)
     end
