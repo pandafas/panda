@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//=require jquery.raty
+
 $( document ).ready(function() {
 // Submit Button
 	$('#submit').on('click', function() {

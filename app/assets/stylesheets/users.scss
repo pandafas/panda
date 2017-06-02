@@ -1,3 +1,88 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#users h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.5em;
+	text-decoration: underline;
+}
+
+#usertable th {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+.table-striped>tbody>tr:nth-child(odd) {
+	background-color: #cecfc3 !important;
+}
+
+.table-striped>tbody>tr:nth-child(even) {
+	background-color: #ebedea !important;
+}
+
+//show
+
+#show_deets {
+	padding-top: 3%
+}
+
+#show_deets div>p {
+	font-family: "Josefin Sans", sans-serif;
+	padding-bottom: 2%;
+	font-size: 1.5em;
+
+}
+
+#show_deets p>strong {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2.0em;
+}
+
+.box {
+	background: white;
+	background-color: rgba(255,255,255,0.5);
+	padding-bottom: 5%;
+}
+
+// new user & editing user (_form)
+
+#newuser h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#newuser label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+#newuser .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
+
+// password-edit
+
+#forgot h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#forgot label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+
+#forgot .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
+
+

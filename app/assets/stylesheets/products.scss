@@ -1,7 +1,3 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 //products_controller.rb
 .panel-body h1 {
 	font-family: "La Belle Aurore", cursive;
@@ -57,6 +53,40 @@ tr td {
 	padding-bottom: 1%;
 }
 
+#catey {
+	padding-bottom: 2%;
+}
+
+#rate {
+	padding-bottom: 2%;
+}
+ #rate p strong {
+ 	font-family: "La Belle Aurore", cursive;
+ 	font-size: 1.6em;
+}
+
+#comments h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 2.0em;
+	text-align: center;
+}
+#comments label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.3em;
+}
+
+#comments textarea {
+	background-color: #ebedea;
+}
+
+#comments .btn-primary {
+	background-color: #fff;
+	color: #333;
+	font-family: "Josefin Sans", sans-serif;
+	border-color: #ccc;
+
+}
+
 #prod_show p strong {
 	font-family: "La Belle Aurore", cursive;
 	font-size: 1.6em;
@@ -76,6 +106,45 @@ tr td {
 	color: #806f62;
 	width: auto;
 }
+
+.product-reviews {
+	padding-left: 3%;
+}
+
+.product-reviews hr {
+	width: 80%;
+
+}
+
+.pagination {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.2em;
+	color: #3c2f3a;
+	margin: 1.5em;
+
+}
+
+.pagination .disabled {
+	border: 1px solid;
+	color: #979183;
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
+
+.pagination .next_page {
+	border: 1px solid;
+	color: #806f62 !important;
+	text-decoration: none;
+	padding: 0.2em 0.5em;
+}
+
+a.previous_page {
+	border: 1px solid;
+	color: #979183 !important;
+	text-decoration: none !important;
+	padding: 0.2em 0.5em;
+}
+
 
 //index.html.erb
 
@@ -131,6 +200,43 @@ a:visited {
 	padding-top: 4%;;
 }
 
+//new.html.erb
+
+#newprod h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#newprod label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+#newprod .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
+
+//edit.html.erb
+
+#editprod h1 {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 3.0em;
+}
+
+#editprod label {
+	font-family: "La Belle Aurore", cursive;
+	font-size: 1.5em;
+}
+
+#editprod .btn-primary {
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #cecfc3;
+	color: #3c2f3a;
+	border-color: #cecfc3;
+}
 
 
 

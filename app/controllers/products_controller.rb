@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+    class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -8,13 +8,14 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       @products = Product.search(search_term)
     else
-      @products = Product.all
+      @products = Product.where('category is not null').group_by(&:category)
     end
   end
 
   # GET /products/1
   # GET /products/1.json
   def show  
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
   end
 
   # GET /products/new
@@ -65,6 +66,7 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

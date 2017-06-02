@@ -1,42 +1,25 @@
-  <div class="container" id="ncont">
+  <!--<div class="container" id="ncont">
     <p id="notice"><%= notice %></p>
-  </div>
+  </div>--> 
 
 
   <div class="container-fluid" id="product">
-  	<div class="row" id="sign">
-  		<div class="col-sm-12 col-md-12 col-lg-12">
-  			<h1>Signs</h1>
-  		</div>
-  	</div>
-    <div class="row">
-      <%= render @products.where(:category => 'Signs') %>
-    </div>
-    <div class="row" id="rail">
-    	<div class="col-sm-12 col-md-12 col-lg-12">
-    		<h1>Railings</h1>
-    	</div>
-    </div>
-    <div class="row">
-    	<%= render @products.where(:category => 'Railings') %>
-    </div>
-    <div class="row" id="word">
-    	<div class="col-sm-12 col-md-12 col-lg-12">
-    		<h1>Words</h1>
-    	</div>
-	  </div>
-	  <div class="row">
-		  <%= render @products.where(:category => 'Words') %>
-	  </div>
-    <div class="row" id="rounds">
-      <div class="col-sm-12 col-md-12 col-lg-12">
-        <h1>Wood Rounds</h1>
-      </div>
-      <div class="row">
-        <%= render @products.where(:category => 'Wood Rounds') %>
-      </div>
+    <% @products.each do |category, products| %>
+  	 <div class="row" id="<%= category %>">
+  		  <div class="col-sm-12 col-md-12 col-lg-12">
+  			 <h1>
+            <%= category %>
+          </h1>
+  		  </div>
+  	 </div>
+     <div class="row">
+      <% products.each do |product| %>
+        <%= render partial: 'product', locals: {product: product} %>
+      <% end %>
+     </div>
+    <% end %>
   </div>
-
+    
 
   <hr><br>
 
