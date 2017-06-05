@@ -6,7 +6,7 @@ describe Product do
 		@user = User.create!(email: "natertot@gmail.com", password: "natertot")
 		@product.comments.create!(rating: 1, user: @user, body: "Ugly sign")
 		@product.comments.create!(rating: 3, user: @user, body: "OK quality")
-		@product.comments.create!(raitng: 5, user: @user, body: "Beautiful product")
+		@product.comments.create!(rating: 5, user: @user, body: "Beautiful product")
 	end
 	context "when the product has comments" do
 		it "returns the average rating of all comments" do
