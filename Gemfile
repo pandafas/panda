@@ -55,7 +55,7 @@ group :development, :test do
 end
 
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :development do

@@ -2,8 +2,8 @@ require 'rails_helper'
 
 describe Product do
 	before do
-		@product = Product.create!(name: "wood sign", description: "wood sign", colour: "black", price: "45", category: "Signs", image_url: "wood_sign.jpg")
-		@user = User.create!(email: "natertot@gmail.com", password: "natertot")
+		@product = FactoryGirl.create(:product)
+		@user = FactoryGirl.create(:user)
 		@product.comments.create!(rating: 1, user: @user, body: "Ugly sign")
 		@product.comments.create!(rating: 3, user: @user, body: "OK quality")
 		@product.comments.create!(rating: 5, user: @user, body: "Beautiful product")

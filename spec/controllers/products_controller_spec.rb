@@ -3,7 +3,7 @@ require 'rails_helper'
 describe ProductsController, type: :controller do
 
 	before do
-		@product = Product.create!(name: "wood sign", image_url: "woodsign.jpg", description: "A sign made of wood", colour: "brown", price: "25", category: "signs")
+		@product = FactoryGirl.create(:product)
 	end
 
 	context 'GET #index' do
