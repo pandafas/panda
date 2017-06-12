@@ -1,0 +1,11 @@
+<form action="/your-server-side-code" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+    data-amount="<%= @product.price*100 %>"
+    data-name="Grit & Grain"
+    data-description="<%= @product.name %>"
+    data-image="<%= image_path(@product.image_url) %>"
+    data-locale="auto">
+  </script>
+</form>
