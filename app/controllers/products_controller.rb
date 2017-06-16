@@ -7,9 +7,11 @@
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term).nil? ? "No search results" : Product.search(search_term).group_by(&:category)
+      logger.debug "Product: #{@products}"
       
     else
       @products = Product.where('category is not null').group_by(&:category)
+      logger.debug "Product: #{@products}"
     end
   end
 
@@ -17,6 +19,7 @@
   # GET /products/1.json
   def show  
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
+    logger.debug "Comments: #{@comments}"
   end
 
   # GET /products/new

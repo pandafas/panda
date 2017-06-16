@@ -2,7 +2,7 @@ class PaymentsController < ApplicationController
 	before_action :authenticate_user!
 
 	def create
-
+		byebug
 		@product = Product.find(params[:product_id])
 		
 		if user_signed_in?
