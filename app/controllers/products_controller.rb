@@ -29,6 +29,7 @@
 
   # GET /products/1/edit
   def edit
+
   end
 
   # POST /products
