@@ -2,7 +2,6 @@
 	<% @comments.each do |comment| %>
 		<%= render comment %>
 	<% end %>
-	
 	<p><%= will_paginate @comments, :page_links => false %></p>
 </div>
 
