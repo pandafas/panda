@@ -9,7 +9,9 @@
   	 </div>
      <div class="row">
       <% items.each do |item| %>
+        <% cache(cache_key_for_products) do %>
         <%= render partial: 'product', locals: {product: item} %>
+        <% end %>
       <% end %>
      </div>
     <% end %>
