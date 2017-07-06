@@ -42,6 +42,13 @@
 				</p>
 			</div>
 
+			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="viewed">
+				<p>
+					<strong>Views: </strong>
+					<%= @product.views %>
+				</p>
+			</div>
+
 			<div class="col-sm-offset-4 col-md-offset-4 col-sm-4 col-md-4" id="rate">
 					<p><strong>Ratings: </strong></p>
 					<small>Highest: </small><div class="rated" data-score="<%= @product.highest_rating_comment.nil? ? '0' : @product.highest_rating_comment.rating %>"></div>
