@@ -96,4 +96,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { :host => 'cfgrit.herokuapp.com' }
+
+  config.web_socket_server_url = "wss://cfgrit.herokuapp.com/cable"
+
+  config.action_cable.allowed_request_origins = ['http://cfgrit.herokuapp.com', 'http://cfgrit.herokuapp.com']
 end
