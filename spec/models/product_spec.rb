@@ -13,13 +13,27 @@ describe Product do
 		it "returns the average rating of all comments" do
 			expect(@product.average_rating).to eq 3
 		end
+		it "returns the highest rating of all comments" do
+			expect(@product.highest_rating_comment.rating).to eq 5
+		end
+		it "returns the lowest rating of all comments" do
+			expect(@product.lowest_rating_comment.rating).to eq 1
+		end
 	end
-	context "creates invalid product"do
+	context "creates invalid product" do
 		it "return is not valid" do
 			expect(Product.new(description: "purple wood round")).not_to be_valid
 		end
 	end
-
-	
+	context "shows current amount of views" do
+		it "shows the current value" do
+			expect(@product.views).to be > '0'
+		end
+	end
+	context "validates the attributes of the product" do
+		it "shows all product attributes" do
+			expect(@product).to have_attributes(:name => "Wood Sign", :description => "A wood sign.", :image_url => "woodsign.jpg", :colour => "Dark Cherry", :price => 25, :category => "Signs")
+		end
+	end
 end
 
