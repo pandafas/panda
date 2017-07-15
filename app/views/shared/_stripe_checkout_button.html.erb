@@ -1,10 +1,9 @@
-<script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
     data-amount="<%= @product.price*100 %>"
-    data-name="Grit & Grain"
+    data-color="black"	
+    data-name="Grit &amp; Grain"
     data-description="<%= @product.name %>"
     data-image="<%= image_path(@product.image_url) %>"
-    data-locale="auto">
- </script>
+    data-locale="auto"></script>
 	<%= hidden_field_tag(:product_id, @product.id) %>

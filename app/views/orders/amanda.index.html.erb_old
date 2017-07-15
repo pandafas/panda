@@ -1,0 +1,41 @@
+<!--<div class="container" id="order">
+	<div class="row">
+		<div class="col-sm-offset-4 col-md-offset-4 col-sm-8 col-md-8">
+			<h1>Your have no orders!</h1>
+		</div>
+	</div>
+</div>-->
+<h3> <%= current_user.first_name %> this is your order page</h3>
+
+<div class="row">
+  <table class="order-table">
+    <tbody>
+      <tr>
+        <td><p> DATE </p></td>
+        <td><p> PRODUCT </p></td>
+        <td><p> PRICE </p></td>
+        <td><p> PURCHASER </p></td>
+      </tr>
+    <% @orders.each do |order| unless order.nil? %>
+      <tr>
+        <td><p> <%= order.created_at %>  </p></td>
+        <td><p> <%= order.product.name %></p></td>
+        <td><p> <%= order.total %> &euro;</p></td>
+        <td><p> <%= order.user.first_name %> <%= order.user.last_name %> </p></td>
+      </tr>
+    <% end %>
+    </tbody>
+   </table>
+</div>
+<div class="row">
+  <div class="orders-pagination">
+    <div class="apple_pagination">
+        <div class="apple_pagination page_entries">
+          <%= page_entries_info @orders %>
+        </div>
+        <%= will_paginate @orders, :container => false %>
+    </div>
+  </div>
+</div>
+
+	
