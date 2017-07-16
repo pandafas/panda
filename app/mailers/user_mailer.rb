@@ -6,7 +6,8 @@ class UserMailer < ApplicationMailer
 	@message = message
 		mail(:from => email,
 			:to => "gritngrain08@gmail.com",
-			:subject => "A new contact form message from #{name}")
+			:subject => "A new contact form message from #{name}",
+			:body => message)
 	end
 
 	
@@ -23,8 +24,8 @@ class UserMailer < ApplicationMailer
 		@message = message
 
 		mail(:to => user.email,
-		 :subject => "Confirmation of payment #{@product.name}",
-		 :body => "test")
+		 :subject => "Your Grit & Grain purchase confirmation",
+		 :body => "Thank you for your purchase of #{@product.name}")
 	end
 		
 end

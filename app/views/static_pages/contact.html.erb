@@ -1,54 +1,14 @@
+
 <div class="container" id="contact">
 	<div class="box">
 		<h1>Contact us! We can't wait to hear from you!</h1>
 		<p>Give us a call at 1-800-123-GRIT to discuss the opportunity of working together or fill out a Project Request Form and we will be in touch with your shortly</p>
 	</div>
-<!--</div>-->
-<!--<div class="row">
-	<div class="col-offset-1 col-md-7" id="form">
-		<form action="#">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="name">First and Last Name</label>
-						<input type="text" class="form-control" name="name" placeholder="Enter name here" id="name" title="Name"><p id="visible-name"></p>
-					</div>
-				</div>
 
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="phone">Phone Number (optional)</label>
-						<input type="tel" class="form-control" name="phone" id="phone" title="Phone Number" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx" required><p id="visible-phone"></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="form-group">
-						<label for="email">Email Address*</label>
-						<input type="email" class="form-control" name="email" placeholder="Enter email here" id="email" title="Email Address" required="required"><p id="visible-email"></p>
-					</div>
-				</div>
-			</div>	
-									
-			<div class="row">
-				<div class="col-md-12">
-					<div class="form-group">
-						<label for="message-box">Project Request</label>
-						<textarea style="resize:none" cols="40" rows="5" class="form-control" id="message-box" placeholder="Enter message here" title="Message"></textarea>
-						<p id="visible-comment"></p>
-						<p id="char-count"></p>
-						<button type="submit" class="btn btn-default btn-sm" id="submit">Submit</button>
-					</div>
-				</div>
-			</div>		
-		</form>
-	</div>
-</div>-->
 <%= flash[ :notice] %>
 
-	<%=form_tag("/static_pages/thank_you", id: "cont") do %>
+ <div class="alert alert-success" role="alert" id="project_alert"></div>
+	<%=form_tag("/static_pages/thank_you", id: "cont", remote: true) do %>
 	<div class="row" id="cform">
 		<div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8">
 			<div class="form-group" id="entry">
@@ -65,11 +25,12 @@
 			</div>
 		</div>
 		<div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8">
-			<%= submit_tag "Send" %>
+			<%= submit_tag "Send", :id => "test" %>
 		</div>
 	</div>
 	<% end %>
 </div>
+
 		
 
 
