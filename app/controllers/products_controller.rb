@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @current_user = current_user
+    logger.debug "Current USER (index): #{@current_user}"
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term).nil? ? "No search results" : Product.search(search_term).group_by(&:category)
@@ -19,6 +20,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show  
     @current_user = current_user
+    logger.debug "Current USER (index): #{@current_user}"
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
     logger.debug "Comments: #{@comments}"
     @product.viewed!
