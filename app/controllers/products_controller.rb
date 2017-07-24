@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show  
     @current_user = current_user
-    logger.debug "Current USER (index): #{@current_user}"
+    logger.debug "Current USER (show): #{@current_user}"
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 2)
     logger.debug "Comments: #{@comments}"
     @product.viewed!

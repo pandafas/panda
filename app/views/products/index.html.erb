@@ -1,5 +1,4 @@
   <div class="container-fluid" id="product">
-    <% cache(cache_key_for_products) do %>
     <% @products.each do |category, items| %>
   	 <div class="row" id="<%= category %>">
   		  <div class="col-sm-12 col-md-12 col-lg-12">
@@ -13,7 +12,6 @@
         <%= render partial: 'product', locals: {product: item} %>
       <% end %>
      </div>
-    <% end %>
     <% end %>
     
     <div class="row">
