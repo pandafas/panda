@@ -7,6 +7,8 @@ class Ability
 
     if user.admin?
     	can :destroy, @comment
+    	can :destroy, @product
+    	can :edit, @product
     end
   end
 end

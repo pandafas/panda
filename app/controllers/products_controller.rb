@@ -1,4 +1,4 @@
-    class ProductsController < ApplicationController
+class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -8,7 +8,6 @@
       search_term = params[:q]
       @products = Product.search(search_term).nil? ? "No search results" : Product.search(search_term).group_by(&:category)
       logger.debug "Product: #{@products}"
-      
     else
       @products = Product.where('category is not null').group_by(&:category)
       logger.debug "Product: #{@products}"
@@ -30,14 +29,12 @@
 
   # GET /products/1/edit
   def edit
-
   end
 
   # POST /products
   # POST /products.json
   def create
     @product = Product.new(product_params)
-
     respond_to do |format|
       if @product.save
         format.html { redirect_to "/products/#index", notice: 'Product was successfully created.' }
